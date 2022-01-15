@@ -29,7 +29,7 @@ async def www(message):
 
 @dp.message_handler(Text(equals="🍟Fast-Food"))
 async def ff(message):
-    await message.answer('Nechta buyurtma qilasiz?😃',reply_markup=kochataomi)
+    await message.answer('Maxsulotlardan birini tanlang😃',reply_markup=kochataomi)
 @dp.message_handler(Text(equals="🍕Pitsa"))
 async def ffw(message):
     await message.answer('Nechta buyurtma qilasiz?😃')
@@ -138,10 +138,10 @@ async def ddd(message):
 @dp.message_handler(state=Translate.raqam)
 async def ffg(message,state:FSMContext):
     if message.text[0:4]=='+998' and len(message.text)==13:
-        await message.answer('Iltimos joylashuvingizni yuboring M-n:Urganch sh,Abulg`oziy Bahodirxon,110A uy',reply_markup=zakaz)
+        await message.answer('Iltimos joylashuvingizni yuboring M-n:Urganch shahar(deb boshlansin)',reply_markup=zakaz)
         await Translate.manzil.set()
     else:
-        await message.answer('Iltimos raqamni to`g`ri kiriting(+998)')
+        await message.answer('Iltimos raqamni to`g`ri kiriting(M-n:+99897.......)')
 
 @dp.message_handler(state=Translate.manzil)
 async def ggg(message,state:FSMContext):
