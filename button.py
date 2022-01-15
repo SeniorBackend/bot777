@@ -40,7 +40,7 @@ zakaz = ReplyKeyboardMarkup(
         [KeyboardButton(text="📍Manzilimni yuborish")]
     ],
     resize_keyboard=True,
-    # one_time_keyboard=True,
+    one_time_keyboard=True,
     
 )
 raqam = ReplyKeyboardMarkup(
@@ -48,5 +48,5 @@ raqam = ReplyKeyboardMarkup(
         [KeyboardButton(text="Raqamimni ulashish")],
     ],
     resize_keyboard=True,
-    # one_time_keyboard=True,
+    one_time_keyboard=True,
 )
