@@ -148,6 +148,7 @@ async def ggg(message,state:FSMContext):
     if str(message.text[0:7])=='Urganch':
         await message.answer('Buyurtma qabul qilindi😃 Tez orada yetkazib beriladi🚴‍♂️')
         await message.answer('Murojaat uchun @deSeniorcoder',reply_markup=menu)
+        await state.finish()
 if  __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
 
